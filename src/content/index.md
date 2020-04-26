@@ -5,12 +5,13 @@ layout: index.html
 ---
 
 
-<h2 class="title">The title of the page</h2>
+# Download more Rami!
 
-## Testing this
+## Nopeet, helppoo ja kivaa
 
-<code>
- Nice, you got this working.
-</code>
+![Kuva Ramista.](/rami.jpeg)
 
-These are the page contents that will be rendered on place of the handlebars. Or are they?
+Heloust, heloust! Onksul koneessas tarpeeks Ramia et saisit shoutboxin auki? Ei hätiä, täst saat riittävät Ramit
+rankempiinki hommiin. Ei muutku asenteleleen meikäläisii, morje!
+
+> – Rami, Turun Wappuradio

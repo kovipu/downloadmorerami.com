@@ -1,20 +1,89 @@
 $PADDING_DEFAULT: 15px;
 
-.title {
-  text-transform: uppercase;
-  font-family: Arial, sans-serif;
+body {
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
 
-  h2 {
-    text-decoration: underline;
+header {
+  background-color: #73a977;
+  height: 6em;
+  width: 100%;
+  text-align: right;
+  line-height: 6em;
+  padding-right: 2em;
+  font-size: 20px;
+
+  @media (min-width: 700px), (min-device-width: 700px) {
+    padding-right: 6em;
   }
 }
 
-h2 {
-  color: blue;
+.Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5em;
+  width: 450px;
+  max-width: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+
+  @media (min-width: 700px), (min-device-width: 700px) {
+    margin-top: 10em;
+  }
+
+  p {
+    margin: 0 15px;
+  }
+
+  h1 {
+    font-size: 30px;
+    font-weight: 200;
+    margin: 0;
+
+    @media (min-width: 700px), (min-device-width: 700px) {
+      font-size: 45px;
+    }
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 900;
+    margin: 0;
+  }
+
+  img {
+    width: 320px;
+    border-radius: 180px;
+    border: 5px solid #003366;
+    margin: 30px 0;
+  }
+
+  blockquote {
+    margin-left: auto;
+    margin-top: 0;
+    font-style: italic;
+  }
 }
 
-code {
-  background-color: #f2f2f2;
-  border: black 1px solid;
-  padding: $PADDING_DEFAULT;
+hr {
+  border: none;
+  height: 3px;
+  width: 50px;
+  /* Set the hr color */
+  color: #35B4F1; /* old IE */
+  background-color: #35B4F1; /* Modern Browsers */
+  margin-top: 2rem;
+}
+
+.DownloadContainer {
+  margin-top: 5em;
+  width: 450px;
+  max-width: 100%;
 }

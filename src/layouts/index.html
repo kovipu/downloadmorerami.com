@@ -26,10 +26,14 @@
   
   <meta name="theme-color" content="#f44336">
 
-  <link rel="stylesheet" type="text/css" href="styles.css"/>
-  <script async type="text/javascript" src="bundle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css"/>  
 </head>
   <body>
-    {{{contents}}}
+    <div class="Content">
+      {{{contents}}}
+    </div>
+    <hr>
+    <div class="DownloadContainer" id="download-root"></div>
+    <script src="bundle.js?v={{buildTime "v"}}"></script>
   </body>
 </html>
