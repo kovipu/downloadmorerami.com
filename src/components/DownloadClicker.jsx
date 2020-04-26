@@ -99,6 +99,5 @@ const Button = styled.button`
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 1em;
   margin-right: 4em;
 `;
