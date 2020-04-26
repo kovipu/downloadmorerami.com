@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-const heloust = new Audio('heloust.ogg')
-
 export default function DownloadClicker() {
   const [runners, setRunners] = useState([]);
+  const [num, setNum] = useState(0);
 
   function handleClick() {
     // TODO: clear these, this will crash the browser at some point...
     setRunners([...runners, true]);
+    const heloust = new Audio('heloust.ogg');
     heloust.play();
+    setNum(num + 1);
   }
 
   return (
@@ -22,9 +23,12 @@ export default function DownloadClicker() {
         ))}
         <Computer src="ramin_kone.png" />
       </RunnerWrapper>
-      <Button onClick={handleClick}>
-        download
-      </Button>
+      <ControlWrapper>
+        <Button onClick={handleClick}>
+          download
+        </Button>
+        {num} Ramia
+      </ControlWrapper>
     </Wrapper>
   );
 }
@@ -77,6 +81,15 @@ const Computer = styled.img`
   z-index: 1000;
 `;
 
+const ControlWrapper = styled.div`
+  width: 100%;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 20px;
+  padding-right: 1em;
+`;
+
 const Button = styled.button`
   padding: 20px 30px;
   background-color: #35B4F1;
@@ -87,4 +100,5 @@ const Button = styled.button`
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 1em;
+  margin-right: 4em;
 `;
